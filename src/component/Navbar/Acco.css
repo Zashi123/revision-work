@@ -1,0 +1,50 @@
+ .acco{
+    margin-top:100px;
+    position: relative;
+    top: 10rem;
+}
+    .sect{
+            /* padding: 20px; */
+            margin: 10px 10px;
+            /* margin-bottom: 20px; */
+        }
+
+        .sect .label {
+            position: relative;
+            background-color: rgb(23, 73, 34);
+            padding: 20px;
+
+
+        }
+
+        .sect .label::after {
+            content: "+";
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+        }
+
+        .minus .label::after {
+            content: "-";
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+        }
+
+        .sect .html {
+            background-color: rgb(225, 225, 233);
+
+            display: none;
+            padding: 20px;
+
+
+        }
+
+        .minus .html {
+            display: block;
+
+        }

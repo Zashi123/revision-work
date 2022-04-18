@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.cointainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    z-index:1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+     
+   
+  
+}
+
+
+.navbar{
+  display: flex;
+
+   
+    margin-top: 10px;
+}
+
+.cointainer  button{
+background-color: orange;
+    padding: 10px;
+ color: white;
+ font-weight: bold;
+ border: none;
+ width: 100px;
+ margin-top: 14px;
+
+
+
+ 
+}
+.put{
+    display: none;
+
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.middle div{
+    background-color: rgba(238, 195, 114, 0.905);
+    text-align: center;
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+.middle .sawir{
+flex-basis: 45%;
+
+
+}
+.sawir img{
+    width: 100%;
+ 
+}
+
+.mm{
+    background-color:orange;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 35%;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 black;
+    transition: ease-out.3s;
+    outline: none;
+    border: none;
+
+  
+    
+}
+.cointainer nav ul li a:hover{
+color: orange;
+
+
+}
+.mm:hover{
+    box-shadow: inset 150px 0 0 0 black;
+    color: white;
+
+}
+.navbar :first-child{
+  color:orange;
+}
+
+.nav{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul li a {
+  color: black;
+  padding: 20px;
+
+}
+
+@media only screen and (max-width:850px) {
+  .nav {
+    font-size: 20px;
+    background-color: red;
+  }
+
+}
+
+  @media only screen and (max-width:650px){
+        .put{
+            display: flex;
+            background-color: saddlebrown;
+        }
+             .nav{ 
+                 display: none; 
+             }
+         
+        }
+      
+         
+
+  
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

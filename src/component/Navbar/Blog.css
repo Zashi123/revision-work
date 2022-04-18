@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+
+.blok{
+  border: 2px solid green;
+}
+.blok div{
+    border: 2px solid blue;
+}
+.blok div img{
+    width: 100%;
+}

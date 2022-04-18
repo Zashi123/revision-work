@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.accodion{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 400px;
+
+    height: 100vh;
+    width: 80vw;
+    /* align-items: center; */
+}
+.acco{
+    flex-basis: 45%;
+    font-size: 8px;
+    margin-left: 50px;
+}
+.acco h1{
+margin-bottom: 20px;
+font-size: 25px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+word-spacing: 5px;
+}
+.dion{
+    flex-basis: 45%;
+    margin-left: 100px;
+}
+.item{
+    background-color: #f0ebe1;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.title{
+    display: flex;
+    color: #85662b;
+    align-items: center;
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.title h2{
+    margin-left: 20px;
+    color: rgb(54, 54, 104);
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title span{
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+.content{
+    font-size: 18px;
+    color: rgb(94, 88, 88);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.contentshow{
+    height: auto;
+    max-height: 9999;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+
+}
+.cont{
+    /* position: absolute; */
+  
+    /* transform: translate(-50%, -50%); */
+    overflow: hidden;
+}
+.buut{
+position: relative;
+text-align: end;
+left: 50%;
+border: none;
+outline: none;
+font-size: 1rem;
+background-color:blue;
+text-transform: uppercase;
+transition: 4s;
+
+
+}
+.buut::before,.buut::after{
+content: "";
+position: absolute;
+top: 0;
+width: 85px;
+height: 55px;
+box-sizing: border-box;
+border: 2px solid #5735d2;
+border-right: transparent;
+border-left: transparent;
+transition: 4s;
+
+
+}
+.buut::before{
+    left: 0;
+    transform: translateX(-85px);
+
+}
+.buut::after{
+    right: 0;
+    transform: translateX(85px);
+
+}
+.buut:hover{
+    background-color: #5735d2;
+    color:wheat;
+    transition-delay:.7s;
+
+}
+.buut:hover::before, .buut:hover::after{
+    transform:translateX(0);
+}
